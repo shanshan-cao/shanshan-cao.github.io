@@ -86,6 +86,7 @@ author:
   #location         : "Location"
   employer         : "Shandong University, CN"
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  inspire          : "https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=exactauthor%3AShan.Shan.Cao.1&ui-citation-summary=true"
   googlescholar    : "https://scholar.google.com/citations?user=WtnGo-0AAAAJ&hl=en"
   email            : shanshan.cao@sdu.edu.cn
   #researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
