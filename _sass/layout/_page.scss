@@ -37,6 +37,7 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  border-bottom: none !important;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -61,6 +62,7 @@
 
   /* paragraph indents */
   p {
+    text-align: justify;
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
