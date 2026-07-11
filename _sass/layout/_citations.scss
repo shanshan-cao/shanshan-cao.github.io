@@ -1,0 +1,355 @@
+/* ==========================================================================
+   INSPIRE-HEP Citation Summary Styles
+   ========================================================================== */
+
+.citations-summary,
+.citations-loading,
+.citations-error {
+  margin: 1em 0;
+}
+
+/* Mode Switch Toggle */
+.citations-mode-switch {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.mode-btn {
+  padding: 0.4rem 1rem;
+  font-size: 0.85em;
+  font-weight: 500;
+  border: 1px solid var(--global-border-color);
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:first-child {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+
+  &:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  &:hover:not(.active) {
+    background-color: var(--global-bg-color);
+    color: var(--global-text-color);
+  }
+
+  &.active {
+    background-color: var(--global-link-color);
+    border-color: var(--global-link-color);
+    color: #fff;
+  }
+}
+
+/* Citation Grid Layout */
+.citations-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* Individual Citation Stat */
+.citation-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  background-color: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.75em;
+  font-weight: 700;
+  color: var(--global-link-color);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.35em;
+  }
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75em;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+
+  @media (max-width: 480px) {
+    font-size: 0.7em;
+  }
+}
+
+/* Journal Statistics Box */
+.citation-stat-journals {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 1rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.85em;
+    margin-right: 1rem;
+    flex-shrink: 0;
+
+    @media (max-width: 480px) {
+      margin-right: 0;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .journal-counts {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      gap: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      gap: 0.75rem;
+      font-size: 0.9em;
+    }
+  }
+
+  .journal-item {
+    font-size: 0.875em;
+    color: var(--global-text-color);
+    font-weight: 500;
+    white-space: nowrap;
+
+    @media (max-width: 480px) {
+      font-size: 0.8em;
+    }
+  }
+}
+
+/* Citations Per Year Histogram */
+.citations-histogram {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+}
+
+.histogram-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding: 0 0.25rem;
+}
+
+.histogram-title {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.histogram-source {
+  font-size: 0.75em;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+.histogram-chart {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+
+  @media (max-width: 480px) {
+    gap: 0.25rem;
+    padding: 0;
+  }
+}
+
+.histogram-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 70px;
+
+  @media (max-width: 480px) {
+    max-width: 45px;
+  }
+}
+
+.histogram-count {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  height: 1.2em;
+  line-height: 1.2em;
+
+  @media (max-width: 480px) {
+    font-size: 0.6em;
+  }
+}
+
+.histogram-bar-wrapper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+
+  @media (max-width: 480px) {
+    height: 60px;
+  }
+}
+
+.histogram-bar {
+  width: 100%;
+  min-height: 4px;
+  background: var(--global-link-color);
+  border-radius: 3px 3px 0 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.histogram-year {
+  font-size: 0.75em;
+  color: var(--global-text-color-light);
+  margin-top: 0.4rem;
+  font-weight: 500;
+  height: 1.2em;
+  line-height: 1.2em;
+
+  @media (max-width: 480px) {
+    font-size: 0.65em;
+    margin-top: 0.25rem;
+  }
+}
+
+/* Citations Footer */
+.citations-footer {
+  text-align: center;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light);
+
+  small {
+    font-size: 0.8em;
+  }
+
+  a.citations-refresh {
+    color: var(--global-link-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--global-link-color);
+
+    &:hover {
+      color: var(--global-link-color-hover);
+      border-bottom-color: var(--global-link-color-hover);
+    }
+  }
+}
+
+/* Loading State */
+.citations-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  color: var(--global-text-color-light);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 0.5rem;
+  border: 2px solid var(--global-border-color);
+  border-top-color: var(--global-link-color);
+  border-radius: 50%;
+  animation: spinner-rotate 0.8s linear infinite;
+}
+
+@keyframes spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error State */
+.citations-error {
+  padding: 1.25rem;
+  background-color: lighten($danger-color, 45%);
+  border: 1px solid lighten($danger-color, 30%);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9em;
+
+  p {
+    margin: 0 0 0.5rem 0;
+    color: darken($danger-color, 10%);
+  }
+
+  small {
+    font-size: 0.875em;
+  }
+
+  a.citations-retry {
+    color: $danger-color;
+    text-decoration: none;
+    border-bottom: 1px dotted $danger-color;
+
+    &:hover {
+      color: darken($danger-color, 10%);
+      border-bottom-color: darken($danger-color, 10%);
+    }
+  }
+}

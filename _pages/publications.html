@@ -5,11 +5,21 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+<div id="inspire-citations" data-author-id="1274148" data-author-bai="Shanshan.Cao.1" data-lang="en"></div>
+
+{% if site.author.inspire-hep %}
+  <div class="wordwrap">Full publication list available at <a href="{{site.author.inspire-hep}}">INSPIRE-HEP</a> </div>
 {% endif %}
 
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my publications at <a href="{{site.author.googlescholar}}">Google Scholar</a> </div>
+{% endif %}
+
+
+
 {% include base_path %}
+
+{% comment %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
@@ -32,5 +42,5 @@ author_profile: true
   {% endfor %}
 {% endif %}
 
-
+{% endcomment %}
 
