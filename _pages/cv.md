@@ -11,14 +11,14 @@ redirect_from:
 
 Affiliation: School of Physics, Southeast University  
 Address: 2 Southeast University Road, Jiangning District, Nanjing, 211102, China  
-Office: Rm 111, Tian Jia Bing Bldg. (North), Southeast University (Jiu Long Hu Campus)  
+Office: Rm. 111, Tian Jia Bing Bldg. (North), Southeast University (Jiu Long Hu Campus)  
 Email: shanshan.cao[AT]seu.edu.cn
 
 
 ## Education
 
-* 2009/08 - 2014/08 &nbsp; Duke University, Ph.D
-* 2005/09 - 2009/06 &nbsp; Nanjing University, B.S
+* 2009/08 - 2014/08 &nbsp; Duke University, Ph.D.
+* 2005/09 - 2009/06 &nbsp; Nanjing University, B.S.
 
 ## Work experience
 

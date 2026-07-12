@@ -14,9 +14,15 @@ main:
     
   - title: "CV"
     url: /cv/
+    
+  - title: "Research Group"
+    url: /research-group/
 
   - title: "Publications"
     url: /publications/
+
+  - title: "Miscellaneous"
+    url: /misc/
 
   #- title: "Talks"
   #  url: /talks/

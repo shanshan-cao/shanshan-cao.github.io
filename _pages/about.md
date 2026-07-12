@@ -16,6 +16,5 @@ We are developing diverse approaches to probe the QGP properties, such as Quantu
 Welcome to our team!
 
 
-
 ![Cartoon of QGP properties](/images/properties_of_QGP.png)
 
