@@ -18,3 +18,5 @@ Welcome to our team!
 
 ![Cartoon of QGP properties](/images/properties_of_QGP.png)
 
+
+A brief introduction of relativistic heavy-ion collisions and QGP can be found [here]({{ base_path }}/files/QGP-introduction.pdf).
