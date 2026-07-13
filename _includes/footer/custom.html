@@ -3,6 +3,24 @@
 <!-- Support for MathJax -->
 <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
 
+<!-- Visitor badge (counts once per session) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var span = document.getElementById('visitor-badge');
+  if (!span) return;
+  var pageId = '{{ site.github_username }}.github.io';
+  var counted = sessionStorage.getItem('vc-' + pageId);
+  var src = 'https://visitor-badge.laobi.icu/badge?page_id=' + pageId + '&left_color=%23d5d7d7&right_color=%23d5d7d7&left_text=Visitors';
+  if (counted) src += '&query_only=true';
+  var img = document.createElement('img');
+  img.src = src;
+  img.alt = 'visitors';
+  img.style.cssText = 'vertical-align:middle;height:18px';
+  span.appendChild(img);
+  if (!counted) sessionStorage.setItem('vc-' + pageId, '1');
+});
+</script>
+
 <!-- Open external and file links in new tab -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -27,5 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+
 
 <!-- end custom footer snippets -->
