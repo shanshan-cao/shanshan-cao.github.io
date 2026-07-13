@@ -8,15 +8,15 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href]').forEach(function(link) {
     var href = link.getAttribute('href');
-    // Skip anchor links, javascript, and navigation
+    /* Skip anchor links, javascript, and navigation */
     if (href.startsWith('#') || href.startsWith('javascript:') || link.closest('.masthead')) return;
-    // File downloads always open in new tab
+    /* File downloads always open in new tab */
     if (/\.(pdf|zip|docx?|pptx?|xlsx?|tar\.gz)$/i.test(href)) {
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener noreferrer');
       return;
     }
-    // External links (different host) open in new tab
+    /* External links (different host) open in new tab */
     if (/^https?:\/\//.test(href)) {
       var linkHost = new URL(href, window.location.origin).host;
       if (linkHost !== window.location.host) {
