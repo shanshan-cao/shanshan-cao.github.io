@@ -34,7 +34,7 @@ author_profile: true
 * **Postdoctoral Researchers:**
   * **Wen-Jing Xing**, 2022/09 - 2025/03       
     --> Faculty member at University of South China
-  * **Ao Luo**, 2023/09 - 2024/04       
+  * **Ao Luo**, 2023/09 - 2026/04       
     --> Faculty member at Hubei Engineering University
 
 
