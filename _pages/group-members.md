@@ -10,9 +10,11 @@ author_profile: true
 ## Current Members
 
 * **Ph.D. Students:**
-  * **Yichao Dang**, 2021/09 - 
   * **Lejing Zhang**, 2022/09 - 
   * **Changle Sun**, 2023/09 -
+
+* **Visiting Scholars:**
+  * **Shu-Qing Li**, 2026/09 - 
 
 
 ## Former Members
@@ -20,6 +22,8 @@ author_profile: true
 * **Ph.D. Students:**
   * **Xiaowen Li**, 2019/09 - 2024/06 (Co-advised by Prof. Zuo-Tang Liang)    
     --> Lab administrator at Shandong University
+  * **Yichao Dang**, 2021/09 - 2026/09  
+    --> Postdoctoral Researcher at Nuclear Power Institute of China
 
 * **Master's Students:**
   * **Xingrong Chen**, 2021/09 - 2024/06    

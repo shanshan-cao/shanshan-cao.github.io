@@ -14,4 +14,6 @@ author_profile: true
 
 ## Group News
 
-* One July 20, 2026, this Github Homepage is online. Stay tuned for our future updates.
+* On September 7, 2026, Prof. Shu-Qing Li from Jining University joins our group as a visiting scholar. She will stay with us for one year. Welcome, Prof. Li!
+* On August 29, 2026, graduate student Yichao Dang successfully defends his Ph.D. thesis. Congratulations to Dr. Dang!
+* On July 20, 2026, this Github Homepage is online. Stay tuned for our future updates.
