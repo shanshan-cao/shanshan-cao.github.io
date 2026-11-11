@@ -44,6 +44,16 @@ author_profile: true
 <div class="gallery-grid">
 
   <figure class="gallery-item">
+    <img src="{{ base_path }}/images/gallery/2026-Shanghai-ATHIC2026-Zhang.jpg" alt="Photo 1">
+    <figcaption>2026 International ATHIC Conference in Shanghai, China: Graduate student presenting a talk</figcaption>
+  </figure>
+
+  <figure class="gallery-item">
+    <img src="{{ base_path }}/images/gallery/2026-Shanghai-ATHIC2026-Sun.jpg" alt="Photo 1">
+    <figcaption>2026 International ATHIC Conference in Shanghai: Graduate student won an Excellent Poster Award</figcaption>
+  </figure>
+
+  <figure class="gallery-item">
     <img src="{{ base_path }}/images/gallery/2026-Wuhan-China-C3NT-jet-Tea.jpg" alt="Photo 1">
     <figcaption>2026 C3NT Jet-Soft International Workshop in Wuhan, China: Tea harvest excursion</figcaption>
   </figure>
